@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="250px" preserveAspectRatio="none" viewBox="-3 -3 306 506" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<symbol fill="red" preserveAspectRatio="xMidYMid" viewBox="-600 -600 1200 1200">
+<path d="M0-300c0-100 100-200 200-200 s200 100 200 250 C400 0 0 400 0 500 0 400-400 0-400-250 c0-150 100-250 200-250 S0-400 0-300z"/>
+</symbol>
+<symbol fill="black" preserveAspectRatio="xMidYMid" viewBox="-600 -600 1200 1200">
+<path d="M30 150c5 235 55 250 100 350 h-260c45-100 95-115 100-350 a10 10 0 0 0-20 0 210 210 0 1 1-74-201 10 10 0 0 0 14-14 230 230 0 1 1 220 0 10 10 0 0 0 14 14 210 210 0 1 1-74 201 10 10 0 0 0-20 0z"/>
+</symbol>
+<symbol id="a" fill="black" preserveAspectRatio="xMidYMid" viewBox="-600 -600 1200 1200">
+<path d="m0-500c100 250 355 400 355 685a150 150 0 0 1 -300 0 10 10 0 0 0 -20 0c0 200 50 215 95 315h-260c45-100 95-115 95-315a10 10 0 0 0 -20 0 150 150 0 0 1 -300 0c0-285 255-435 355-685z"/>
+</symbol>
+<symbol fill="red" preserveAspectRatio="xMidYMid" viewBox="-600 -600 1200 1200">
+<path d="M-400 0C-350 0 0-450 0-500 0-450 350 0 400 0 350 0 0 450 0 500 0 450-350 0-400 0z"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="m-270 460h160m-90-10l200-910 200 910m-90 10h160m-390-330h240" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="m-225-225c-20-40 25-235 225-235s225 135 225 235c0 200-450 385-450 685h450v-160" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="m-250-320v-140h450l-310 380c10-10 60-40 110-40 200 0 250 120 250 270 0 200-80 310-280 310s-230-160-230-160" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="m50 460h200m-100 0v-920l-450 635v25h570" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="m170-460h-345l-35 345s10-85 210-85c100 0 255 120 255 320s-75 340-275 340-235-175-235-175" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="M-250 100a250 250 0 0 1 500 0v110 a250 250 0 0 1-500 0v-420A250 250 0 0 1 0-460 c150 0 180 60 200 85" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="M-265-320v-140h530 C135-200-90 100-90 460" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol id="b" preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="m-1-50a205 205 0 1 1 2 0h-2a255 255 0 1 0 2 0z" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="M250-100a250 250 0 0 1-500 0v-110 a250 250 0 0 1 500 0v420A250 250 0 0 1 0 460 c-150 0-180-60-200-85" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="M-260 430v-860M-50 0v-310 a150 150 0 0 1 300 0 v620a150 150 0 0 1-300 0z" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="M50-460h200m-100 0v710a100 100 0 0 1-400 0v-30" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="M-260 100c300 0 220 360 520 360M-175 0v-285 a175 175 0 0 1 350 0v570a175 175 0 0 1-350 0z" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<symbol preserveAspectRatio="xMidYMid" viewBox="-500 -500 1000 1000">
+<path d="M-285-460h200m-100 0v920m-100 0h200M85-460h200m-100 20l-355 595 M85 460h200m-100-20L-10-70" fill="none" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+</symbol>
+<rect width="300" height="500" rx="16" ry="16" fill="#fff" stroke="#000" stroke-width="6"/>
+<use x="10" y="10" width="50" height="50" stroke="black" xlink:href="#b"/>
+<use x="10" y="60" width="50" height="50" xlink:href="#a"/>
+<use x="80" y="180" width="70" height="70" xlink:href="#a"/>
+<use x="150" y="180" width="70" height="70" xlink:href="#a"/>
+<use x="80" y="100" width="70" height="70" xlink:href="#a"/>
+<use x="150" y="100" width="70" height="70" xlink:href="#a"/>
+<g transform="rotate(180 150 250)">
+<use x="10" y="10" width="50" height="50" stroke="black" xlink:href="#b"/>
+<use x="10" y="60" width="50" height="50" xlink:href="#a"/>
+<use x="80" y="180" width="70" height="70" xlink:href="#a"/>
+<use x="150" y="180" width="70" height="70" xlink:href="#a"/>
+<use x="80" y="100" width="70" height="70" xlink:href="#a"/>
+<use x="150" y="100" width="70" height="70" xlink:href="#a"/>
+</g>
+</svg>

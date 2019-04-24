@@ -103,20 +103,20 @@ const moveRandomCard = (source, target) => {
 const stackComponent = (starter, stack_length, hidden) => {
   return stack_length > 0 ? (
     <React.Fragment>
-      <div class="stackcard">
+      <div className="stackcard">
         <SVGBoilerPlate onClick={() => {}} />
       </div>
-      <div class="stackcard">
+      <div className="stackcard">
         <SVGBoilerPlate onClick={() => {}} />
       </div>
-      <div class="stackcard">
+      <div className="stackcard">
         <SVGBoilerPlate onClick={() => {}} />
       </div>
-      <div class="stack_topcard">
+      <div className="stack_topcard">
         <SVGBoilerPlate onClick={() => {}}>
           {starter == null ? null : hidden ? (
             <text x="150" y="250" textAnchor="middle" fontSize={64}>
-              {stack_length + " Cards"}
+              {stack_length + 1 + " cards"}
             </text>
           ) : (
             <g>

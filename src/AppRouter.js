@@ -4,7 +4,8 @@ import styled from "styled-components";
 import Solitaire from "./solitaire";
 
 const StyledMenu = styled.div`
-  width: 100vw;
+  width: 100%;
+  height: 100%;
   text-align: center;
   h1 {
     font-size: 10vw;

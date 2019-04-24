@@ -58,19 +58,19 @@ const firstDeal = state => {
   return {
     ...initialSolitaireState,
     ...deal(deck(), initialSolitaireState.starter),
-    message: "Select 2 Cards for the Crib"
+    message: "Select 2 cards for the crib"
   };
 };
 
 const hand = (state, action) => {
-  if (state.message === "Select 2 Cards for the Crib") {
+  if (state.message === "Select 2 cards for the crib") {
     return {
       ...state,
       ...handToCrib(state.hand, state.crib, action.card),
-      message: "Select 1 Card for the Crib"
+      message: "Select 1 Card for the crib"
     };
   }
-  if (state.message === "Select 1 Card for the Crib") {
+  if (state.message === "Select 1 Card for the crib") {
     state = {
       ...state,
       ...handToCrib(state.hand, state.crib, action.card),
@@ -79,7 +79,7 @@ const hand = (state, action) => {
     return {
       ...state,
       ...scoreTarget(state.hand, state.starter, state.score, true),
-      message: "Points Hand"
+      message: "Points hand"
     };
   }
   return state;
@@ -89,13 +89,13 @@ const button = (state, action) => {
     return {
       ...initialSolitaireState,
       ...deal(deck(), initialSolitaireState.starter),
-      message: "Select 2 Cards for the Crib"
+      message: "Select 2 cards for the crib"
     };
   }
   if (state.score >= WINNING_SCORE) {
     return { ...state, message: "You won!" };
   }
-  if (state.message === "Points Hand") {
+  if (state.message === "Points hand") {
     if (state.stack.length === 0) {
       return { ...state, message: "You lost." };
     }
@@ -103,10 +103,10 @@ const button = (state, action) => {
       ...state,
       ...scoreTarget(state.crib, state.starter, state.score, false),
       crib_hidden: false,
-      message: "Points Crib"
+      message: "Points crib"
     };
   }
-  if (state.message === "Points Crib") {
+  if (state.message === "Points crib") {
     let newState = {
       ...state,
       ...deal(state.stack, state.starter, state.score)
@@ -115,10 +115,10 @@ const button = (state, action) => {
       return {
         ...newState,
         ...scoreTarget(newState.hand, newState.starter, newState.score, false),
-        message: "Points Hand"
+        message: "Points hand"
       };
     }
-    return { ...newState, message: "Select 2 Cards for the Crib" };
+    return { ...newState, message: "Select 2 cards for the crib" };
   }
   return state;
 };

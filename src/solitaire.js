@@ -163,11 +163,18 @@ const StyledScoreTable = styled.div`
 
   table {
     display: flex;
+    border-collapse: collapse;
+    display: inline-block;
+    border-radius: 1vh;
+    border: 0.5vh solid white;
+    border-spacing: 0px;
+    background: white;
   }
 
-  tr {
-    flex-direction: column;
-    flex-wrap: wrap;
+  th {
+    border: 0.25vh solid white;
+    padding: 0.2vh;
+    background: #006500;
   }
 
   float: left;
@@ -176,7 +183,7 @@ const StyledScoreTable = styled.div`
   }
 
   .cards {
-    display: flex;
+    margin: auto;
   }
 
   .number {
@@ -191,7 +198,7 @@ const StyledScoreTable = styled.div`
 const ScoreTable = props => {
   return (
     <StyledScoreTable>
-      {props.state === "Points Hand" || props.state === "Points Crib" ? (
+      {props.state === "Points hand" || props.state === "Points crib" ? (
         <table>
           <tbody>
             {props.points.map(point => (
@@ -203,11 +210,13 @@ const ScoreTable = props => {
                 }
               >
                 <th class="cards">{pointToComponents(point.set)}</th>
+                <th class="type">{point.type}</th>
                 <th class="number">{point.number}</th>
               </tr>
             ))}
             <tr>
               <th>Total</th>
+              {props.points !== null && props.points.length > 0 ? <th /> : null}
               <th>
                 {props.points.reduce((sum, point) => (sum += point.number), 0)}
               </th>
@@ -263,7 +272,7 @@ const StyledNextButton = styled.div`
 
 const NextButton = props => {
   const dispatch = useContext(SolitaireContext);
-  const messages = ["Points Hand", "Points Crib", "You won!", "You lost."];
+  const messages = ["Points hand", "Points crib", "You won!", "You lost."];
   return (
     <StyledNextButton>
       {messages.includes(props.state) ? (
@@ -292,6 +301,7 @@ const StyledBackButton = styled.div`
   margin: 0.25vh;
   :hover {
     font-size: 2.25vh;
+    height: 2.25vh;
   }
   a {
     text-decoration: none;

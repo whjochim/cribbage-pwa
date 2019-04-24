@@ -20,7 +20,7 @@ const scoreTarget = (target, starter, score, should_score_jack) => {
 
 const pointsStarter = starter => {
   if (starter !== null && starter.number === 11) {
-    return [{ set: [starter], number: 2 }];
+    return [{ set: [starter], number: 2, type: "Starter" }];
   }
   return [];
 };
@@ -30,7 +30,7 @@ const pointsKnob = (cards, starter) => {
     ? []
     : cards
         .filter(card => card.number === 11 && card.symbol === starter.symbol)
-        .map(card => ({ set: [card], number: 1 }));
+        .map(card => ({ set: [card], number: 1, type: "Jack" }));
 };
 
 const pointsFlush = (cards, starter) => {
@@ -43,9 +43,9 @@ const pointsFlush = (cards, starter) => {
       let set = cards.slice();
       set.push(starter);
       set.sort(compareCards);
-      return [{ set: set, number: cards.length + 1 }];
+      return [{ set: set, number: cards.length + 1, type: "Flush" }];
     }
-    return [{ set: cards.slice(), number: cards.length }];
+    return [{ set: cards.slice(), number: cards.length, type: "Flush" }];
   }
   return [];
 };
@@ -59,10 +59,11 @@ const points15 = cards => {
           0
         ) === 15
     )
-    .map(set => ({ set: set.sort(compareCards), number: 2 }));
+    .map(set => ({ set: set.sort(compareCards), number: 2, type: "15" }));
 };
 
 const pointsPairs = cards => {
+  const types = ["Pair", "Triple", "Quadruple"];
   return Object.values(
     cards.reduce((grouped, card) => {
       grouped[card.number] = (grouped[card.number] || []).concat(card);
@@ -72,7 +73,8 @@ const pointsPairs = cards => {
     .filter(set => set.length > 1)
     .map(set => ({
       set: set.sort(compareCards),
-      number: set.length * (set.length - 1)
+      number: set.length * (set.length - 1),
+      type: types[set.length - 2]
     }));
 };
 
@@ -102,7 +104,7 @@ const pointsRuns = cards => {
     }
     return true;
   });
-  return result.map(set => ({ set: set, number: set.length }));
+  return result.map(set => ({ set: set, number: set.length, type: "Run" }));
 };
 
 const powerSet = cards => {
